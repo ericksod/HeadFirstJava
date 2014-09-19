@@ -3,20 +3,24 @@ package ChapterFour;
 import ChapterThree.Rectangle;
 
 /**
+ * class to manage and perform actions on a multiple Rectangles.
  * Created by DanielleErickson on 9/10/14.
  */
 public class RectangleManager {
     private ChapterFour.Rectangle[] ar;
-//    public RectangleManager(int numRects){
-//        ar = new Rectangle [numRects];
-//    }
+
+    /**
+     * creates a new RectangleManager with an array of Rectangles.
+     * @param rectAr
+     */
     public RectangleManager(ChapterFour.Rectangle[] rectAr){
         ar = rectAr;
     }
-//    public void addRect(Rectangle toAdd){
-//
-//    }
 
+    /**
+     * calculates and prints the total area of all the Rectangles in this
+     * Rectangle Manager.
+     */
     public void totalArea() {
         int total = 0;
         for (int i = 0; i < ar.length; i++) {
@@ -25,6 +29,11 @@ public class RectangleManager {
         System.out.println("Total Area: "+total);
     }
 
+    /**
+     * calculates and returns the sum of the perimeters of all the Rectangles in this
+     * RectangleManager.
+     * @return
+     */
     public int totalPerimeter(){
         int total = 0;
         for (int i = 0; i < ar.length; i++) {

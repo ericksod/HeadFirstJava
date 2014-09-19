@@ -1,20 +1,24 @@
 package ChapterThree;
 
 /**
+ * class to manage and perform actions on multiple rectangles.
  * Created by DanielleErickson on 9/10/14.
  */
 public class RectangleManager {
     private Rectangle [] ar;
-//    public RectangleManager(int numRects){
-//        ar = new Rectangle [numRects];
-//    }
+
+    /**
+     * creates a new RectangleManager with a given array of Rectangles.
+     */
     public RectangleManager(Rectangle [] rectAr){
         ar = rectAr;
     }
-//    public void addRect(Rectangle toAdd){
-//
-//    }
 
+    /**
+     * calculates and returns the sum of the areas of all the Rectangles in this
+     * RectangleManager.
+     * @return
+     */
     public int totalArea() {
         int total = 0;
         for (int i = 0; i < ar.length; i++) {

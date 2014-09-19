@@ -5,6 +5,8 @@ import ChapterFive.UserGuess;
 import java.util.ArrayList;
 
 /**
+ *
+ * class to represent a game of random number guessing.
  * Created by DanielleErickson on 9/11/14.
  */
 public class RandomNumGame {
@@ -12,6 +14,12 @@ public class RandomNumGame {
     private UserGuess ug = new UserGuess();
     private ArrayList<String> allGuesses = new ArrayList<String>();
 
+    /**
+     * gets the user's guess and checks it against the correct answer. Keeps asking the
+     * user for a guess until they guess correctly. Gives hints to whether they guessed
+     * too high or too low. It also keeps a record of all the guesses the user has made
+     * and prints them out once the user guesses correctly.
+     */
     public void manageGuess(){
         String guess = ug.getUserlnput("Please Guess a number between 1 and 100:");
         allGuesses.add(guess);

@@ -5,9 +5,16 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
+ * class to get the user input.
  * Created by DanielleErickson on 9/11/14.
  */
 public class UserInput {
+
+    /**
+     * method to get input from the user and returns it.
+     * @param prompt
+     * @return
+     */
     public String getUserlnput(String prompt){
         String inputLine = null;
         System.out.print(prompt + " ");
