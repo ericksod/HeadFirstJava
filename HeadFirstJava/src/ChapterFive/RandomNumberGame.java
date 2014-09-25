@@ -6,7 +6,7 @@ package ChapterFive;
  */
 public class RandomNumberGame {
     private int randToGuess = (int) (Math.random()*100);
-    private UserGuess ug = new UserGuess();
+    private UserInput ug = new UserInput();
 
     /**
      * gets the user's guess and checks it against the correct answer. Keeps asking the

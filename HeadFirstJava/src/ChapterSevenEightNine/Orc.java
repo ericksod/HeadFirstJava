@@ -15,8 +15,8 @@ public class Orc implements Monster {
      */
     @Override
     public void takeDamage(int amount) {
-        if(hitPoints>=10){
-            hitPoints-=10;
+        if(hitPoints>=amount){
+            hitPoints-=amount;
         }else{
             System.out.println("Cannot take damage, Orc is already dead");
         }

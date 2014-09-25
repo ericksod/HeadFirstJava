@@ -15,8 +15,8 @@ public class Troll implements Monster {
      */
    @Override
     public void takeDamage(int amount) {
-        if(hitPoints>=5){
-            hitPoints-=5;
+        if(hitPoints>=amount){
+            hitPoints-=amount;
         }else{
             System.out.println("Cannot take damage, Troll is already dead");
         }

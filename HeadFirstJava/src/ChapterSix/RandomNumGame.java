@@ -1,6 +1,6 @@
 package ChapterSix;
 
-import ChapterFive.UserGuess;
+import ChapterFive.UserInput;
 
 import java.util.ArrayList;
 
@@ -11,7 +11,7 @@ import java.util.ArrayList;
  */
 public class RandomNumGame {
     private int randToGuess = (int) (Math.random()*100);
-    private UserGuess ug = new UserGuess();
+    private UserInput ug = new ChapterFive.UserInput();
     private ArrayList<String> allGuesses = new ArrayList<String>();
 
     /**

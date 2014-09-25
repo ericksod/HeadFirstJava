@@ -18,7 +18,7 @@ public class MonsterManagerTest {
         Troll t = new Troll();
         assertEquals(40, t.currentHitPoints());
         t.takeDamage(10);
-        assertEquals(35, t.currentHitPoints());
+        assertEquals(30, t.currentHitPoints());
     }
 
     /*
